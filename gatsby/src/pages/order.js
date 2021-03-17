@@ -38,24 +38,20 @@ const OrderPage = ({ data }) => {
       <OrderStyles onSubmit={submitOrder}>
         <fieldset disabled={loading}>
           <legend>Your Info</legend>
-          <label htmlFor="name">
-            Name
-            <input
-              type="text"
-              name="name"
-              value={values.name}
-              onChange={updateValue}
-            />
-          </label>
-          <label htmlFor="email">
-            email
-            <input
-              type="email"
-              name="email"
-              value={values.email}
-              onChange={updateValue}
-            />
-          </label>
+          <label htmlFor="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            value={values.name}
+            onChange={updateValue}
+          />
+          <label htmlFor="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            value={values.email}
+            onChange={updateValue}
+          />
           <input
             type="syrup"
             name="syrup"
